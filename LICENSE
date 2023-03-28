@@ -1,3 +1,10 @@
+array.h is a fork from zauonlok's (github.com/zauonlok) darray.h file with
+small syntax changes.
+
+------------------------------------------------------------------------------
+
+darray.h is under the following license:
+
 MIT License
 
 Copyright (c) 2020 Zhou Le
