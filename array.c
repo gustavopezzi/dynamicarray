@@ -18,8 +18,8 @@ void* array_hold(void* array, int count, int item_size) {
         return array;
     } else {
         int needed_size = ARRAY_OCCUPIED(array) + count;
-        int float_curr = ARRAY_CAPACITY(array) * 2;
-        int capacity = needed_size > float_curr ? needed_size : float_curr;
+        int double_curr = ARRAY_CAPACITY(array) * 2;
+        int capacity = needed_size > double_curr ? needed_size : double_curr;
         int occupied = needed_size;
         int raw_size = sizeof(int) * 2 + item_size * capacity;
         int* base = (int*)realloc(ARRAY_RAW_DATA(array), raw_size);
